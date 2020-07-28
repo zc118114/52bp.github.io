@@ -1,17 +1,16 @@
 @charset "utf-8";
-/*
-Theme Name: Sakura
-Theme URI: https://2heng.xin/theme-sakura/
-Author: Mashiro, Louie, Fuzzz
-Author URI: http://2heng.xin
-Description: Akina主题分支（原版地址 http://www.akina.pw/themeakina）
-Version: 3.1.7
-License: GNU General Public License v2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: akina
-Tags: 樱花庄的白猫
-*/
 
+.notice{
+    padding: 20px 35px;
+    background: #FFF6B5;
+    color: #737373;
+    font-weight: normal;
+    border-radius: 3px;
+    position: relative;
+    padding-left: 60px;
+    box-shadow: 0 2px 3px rgba(0,0,0,.06);
+    text-align: center;
+}
 #content {
     animation: main 1s
 }
@@ -501,7 +500,6 @@ input[type=submit] {
     border-color: #ccc #ccc #bbb;
     border-radius: 3px;
     background: #e6e6e6;
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, .5), inset 0 15px 17px rgba(255, 255, 255, .5), inset 0 -5px 12px rgba(0, 0, 0, .05);
     color: rgba(0, 0, 0, .8);
     font-size: 12px;
     font-size: .75rem;
@@ -8388,154 +8386,3 @@ td.hljs-ln-numbers {
     background:transparent !important
 }
 
-/*cover video*/
-#coverVideo-btn {
-    all: initial;
-    display: inline-block;
-    width: 36px;
-    font-size: 26px;
-    margin-left: 16px;
-    padding: 7px;
-    border: 0;
-    background: transparent;
-    color: #fff;
-    cursor: pointer;
-    text-align: center;
-    border-radius: 50%;
-}
-
-#coverVideo-btn:hover {
-  background: #ddd;
-  color: black;
-}
-@-webkit-keyframes wave1/*Safari and Chrome*/
-{
-0% { left:-1500px;bottom:-5px}
-	50%{ left:0px;bottom:0px}
-	100%{ left:-1500px;bottom:-5px}
-}
-
-@-webkit-keyframes wave2
-{
-0% { left:-1450px}
-	50%{ left:0px}
-	100%{left:-1450px}
-
-}
-@keyframes wave1/*Safari and Chrome*/
-{
-0% { left:-1500px;bottom:-5px}
-	50%{ left:0px;bottom:0px}
-	100%{ left:-1500px;bottom:-5px}
-}
-
-@keyframes wave2
-{
-0% { left:-1450px}
-	50%{ left:0px}
-	100%{left:-1450px}
-
-}
-#banner_wave_1 {
-    width:auto;
-    height:65px;
-    background:url("https://cdn.jsdelivr.net/gh/yremp/resource@2.0/img/other/wave1.png") repeat-x;
-    _filter:alpha(opacity=80);
-    position:absolute;
-    bottom:0;
-    width:400%;
-    left:-236px;
-    z-index:5;
-    opacity:1;
-    transiton-property:opacity,bottom;
-    animation:wave1 90s infinite;
-    -webkit-animation:wave1 90s infinite;
-}
-#banner_wave_2 {
-    width:auto;
-    height:80px;
-    background:url("https://cdn.jsdelivr.net/gh/yremp/resource@2.0/img/other/wave2.png") repeat-x;
-    _filter:alpha(opacity=80);
-    position:absolute;
-    bottom:0;
-    width:400%;
-    left:0;
-    z-index:4;
-    opacity:1;
-    transiton-property:opacity,bottom;
-    animation:wave2 90s infinite;
-    -webkit-animation:wave2 90s infinite;
-}
-.banner_wave_hide,.banner_wave_hide_fit_skin {
-    opacity:0 !important;
-    bottom:-999px !important
-}
-@media(max-width:860px) {
-    #banner_wave_1,#banner_wave_2 {
-    display:inline-block;
-    
-}
-@-webkit-keyframes wave1/*Safari and Chrome*/
-{
-0% { left:-750px;bottom:-2px}
-	50%{ left:0px;bottom:0px}
-	100%{ left:-750px;bottom:-2px}
-}
-
-@-webkit-keyframes wave2
-{
-0% { left:-750px}
-	50%{ left:0px}
-	100%{left:-750px}
-
-}
-@keyframes wave1/*Safari and Chrome*/
-{
-0% { left:-750px;bottom:-2px}
-	50%{ left:0px;bottom:0px}
-	100%{ left:-750px;bottom:-2px}
-}
-
-@keyframes wave2
-{
-0% { left:-750px}
-	50%{ left:0px}
-	100%{left:-750px}
-
-}
-#banner_wave_1 {
-    width:auto;
-    height:65px;
-    background:url("https://cdn.jsdelivr.net/gh/yremp/resource@2.0/img/other/wave1.png") repeat-x;
-    _filter:alpha(opacity=80);
-    position:absolute;
-    bottom:0;
-    width:400%;
-    left:750px;
-    z-index:5;
-    opacity:1;
-    transiton-property:opacity,bottom;
-    animation:wave1 90s infinite;
-    -webkit-animation:wave1 60s infinite;
-}
-#banner_wave_2 {
-    width:auto;
-    height:80px;
-    background:url("https://cdn.jsdelivr.net/gh/yremp/resource@2.0/img/other/wave2.png") repeat-x;
-    _filter:alpha(opacity=80);
-    position:absolute;
-    bottom:0;
-    width:400%;
-    left:0;
-    z-index:4;
-    opacity:1;
-    transiton-property:opacity,bottom;
-    animation:wave2 90s infinite;
-    -webkit-animation:wave2 60s infinite;
-}
-}#video-add {
-    /*display:none !important*/
-}
-p.comment-form-cookies-consent {
-    display: none;
-}
