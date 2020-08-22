@@ -54,8 +54,8 @@
 			<h2>52BP</h2>
 			<p>一个致力于伟大的白嫖事业的神秘组织</p>
 			<ul class="actions special">
-				<li><a href="#" class="button primary animated" onclick="headertop_down()">不想白嫖</a></li>
-				<li><a href="#" class="button">开始白嫖</a></li>
+				<li><a href="#" class="button primary animated" onclick="silly_girl()">不想白嫖</a></li>
+				<li><a href="#" id="sb-btn" class="button" onclick="silly_boy()">开始白嫖</a></li>
 			</ul>
 		</section>
 
@@ -242,6 +242,19 @@
 	<script src="assets/js/breakpoints.min.js"></script>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
+	<script src="https://cdn.jsdelivr.net/clipboard.js/1.5.12/clipboard.min.js"></script> 
+    <script src="assets/layer/layer.js"></script>
+    <script src="assets/layui/layui.js"></script>
+	<script>
+	function silly_boy(){
+		console.log("success!")
+		layer.msg("我骗你哒，手机请点击左侧图标展开导航或者下方查看哦！", {icon: 1});
+	}
+	function silly_girl(){
+		console.log("fail!")
+		layer.msg("不会吧，不会吧，不会真有人不想白嫖吧！", {icon: 2});
+	}
+ </script>
 
 </body>
 
